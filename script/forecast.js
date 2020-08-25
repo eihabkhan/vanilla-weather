@@ -24,7 +24,3 @@ const getWeather = async (key) => {
             .then(data => data)
 }
 
-getCity("Frankfurt")
-    .then(data => getWeather(data.Key))
-        .then(data => console.log(data))
-        .catch(err => console.log(err));
