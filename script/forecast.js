@@ -21,6 +21,6 @@ const getWeather = async (key) => {
 
     return fetch(base + query)
         .then(res => res.json())
-            .then(data => data)
+            .then(data => data[0])
 }
 
